@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <!-- Visuel provisoire de l'Hôtel Azur (à remplacer par une vraie photo img/hotel-azur.jpg) -->
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A5E48"/><stop offset="1" stop-color="#173A2C"/>
+    </linearGradient>
+    <linearGradient id="or" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8D29A"/><stop offset=".5" stop-color="#C9A14A"/><stop offset="1" stop-color="#E8D29A"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".42" r=".55">
+      <stop offset="0" stop-color="#FAF8F2" stop-opacity=".10"/><stop offset="1" stop-color="#FAF8F2" stop-opacity="0"/>
+    </radialGradient>
+    <g id="palme" fill="none" stroke="#7A9A7E" stroke-width="2" stroke-linecap="round">
+      <path d="M0 0C30-60 70-120 140-170"/>
+      <path d="M28-50c-30-6-52 4-64 26 26 4 48-6 64-26Z"/><path d="M28-50c4-30 24-46 50-48-2 26-20 42-50 48Z"/>
+      <path d="M62-102c-30-6-52 4-64 26 26 4 48-6 64-26Z"/><path d="M62-102c4-30 24-46 50-48-2 26-20 42-50 48Z"/>
+      <path d="M100-144c-28-4-48 6-58 26 24 2 44-8 58-26Z"/><path d="M100-144c6-26 26-40 48-40-4 22-22 36-48 40Z"/>
+    </g>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#fond)"/>
+  <rect width="1200" height="800" fill="url(#halo)"/>
+
+  <!-- Double cadre doré -->
+  <rect x="36" y="36" width="1128" height="728" fill="none" stroke="url(#or)" stroke-width="2"/>
+  <rect x="50" y="50" width="1100" height="700" fill="none" stroke="#C9A14A" stroke-opacity=".35" stroke-width="1"/>
+  <g fill="#C9A14A"><path d="M600 28l8 8-8 8-8-8z"/><path d="M600 756l8 8-8 8-8-8z"/></g>
+
+  <!-- Feuillages -->
+  <use href="#palme" transform="translate(70 760)"/>
+  <use href="#palme" transform="translate(1130 760) scale(-1 1)"/>
+
+  <!-- Façade stylisée en fil doré -->
+  <g fill="none" stroke="url(#or)" stroke-width="1.6" stroke-linejoin="round">
+    <rect x="390" y="170" width="420" height="230"/>
+    <path d="M378 170h444M378 162h444"/>
+    <path d="M390 228h420M390 286h420M390 344h420"/>
+    <g stroke-opacity=".8">
+      <rect x="410" y="186" width="34" height="28"/><rect x="466" y="186" width="34" height="28"/><rect x="700" y="186" width="34" height="28"/><rect x="756" y="186" width="34" height="28"/>
+      <rect x="410" y="244" width="34" height="28"/><rect x="466" y="244" width="34" height="28"/><rect x="700" y="244" width="34" height="28"/><rect x="756" y="244" width="34" height="28"/>
+      <rect x="410" y="302" width="34" height="28"/><rect x="466" y="302" width="34" height="28"/><rect x="700" y="302" width="34" height="28"/><rect x="756" y="302" width="34" height="28"/>
+      <path d="M530 216h140M530 274h140M530 332h140"/>
+      <path d="M540 200v16M560 200v16M580 200v16M600 200v16M620 200v16M640 200v16M660 200v16"/>
+      <path d="M540 258v16M560 258v16M580 258v16M600 258v16M620 258v16M640 258v16M660 258v16"/>
+      <path d="M540 316v16M560 316v16M580 316v16M600 316v16M620 316v16M640 316v16M660 316v16"/>
+    </g>
+    <path d="M570 400v-36a30 30 0 0 1 60 0v36"/>
+    <path d="M330 400h540"/>
+  </g>
+
+  <!-- Textes -->
+  <text x="600" y="520" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif" font-style="italic" font-size="78" fill="#FAF8F2">Hôtel Azur</text>
+  <path d="M480 556h90M630 556h90" stroke="url(#or)" stroke-width="1.4"/>
+  <path d="M600 548l8 8-8 8-8-8z" fill="#C9A14A"/>
+  <text x="600" y="612" text-anchor="middle" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" letter-spacing="8" fill="#E8D29A">BASTOS · YAOUNDÉ</text>
+</svg>
